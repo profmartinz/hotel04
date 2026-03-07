@@ -1,0 +1,148 @@
+/* ==================================================
+   AULA 4 — CSS Performance e Organização
+   Foco: Box Model + Variáveis + Grid + Flexbox
+================================================== */
+
+
+/* ==================================================
+   1. VARIÁVEIS GLOBAIS
+================================================== */
+:root {
+  --color-primary: #155e75;
+  --color-secondary: #1c8a98;
+  --color-light: #f3f3f3;
+  --color-dark: #222;
+  --color-white: #ffffff;
+
+  --font-base: system-ui, -apple-system, BlinkMacSystemFont,"Segoe UI", Roboto, Ubuntu, sans-serif;
+
+  --container-width: 1200px;
+
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 3rem;
+
+  --radius: 12px;
+}
+
+
+/* ==================================================
+   2. RESET + BOX MODEL
+================================================== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* ==================================================
+   3. BASE
+================================================== */
+body {
+  font-family: var(--font-base);
+  background-color: var(--color-light);
+  color: var(--color-dark);
+  line-height: 1.6;
+}
+
+
+/* ==================================================
+   4. CONTAINER PRINCIPAL
+================================================== */
+main {
+  max-width: var(--container-width);
+  margin: var(--spacing-lg) auto;
+  padding: 0 var(--spacing-md);
+}
+
+
+/* ==================================================
+   5. HEADER
+================================================== */
+header {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: var(--spacing-lg);
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: var(--spacing-sm);
+}
+
+
+/* ==================================================
+   6. NAV COM FLEXBOX
+================================================== */
+
+
+/* ==================================================
+   7. HERO
+================================================== */
+.hero {
+  margin-bottom: var(--spacing-lg);
+}
+
+.hero-image {
+  position: relative;
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--radius);
+}
+
+.hero-image figcaption {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: var(--spacing-sm);
+  background: rgba(0, 0, 0, 0.5);
+  color: var(--color-white);
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+
+/* ==================================================
+   8. SEÇÃO DE BOAS-VINDAS
+================================================== */
+section {
+  max-width: 800px;
+  margin: 0 auto var(--spacing-lg);
+  text-align: center;
+}
+
+section h2 {
+  margin-bottom: var(--spacing-sm);
+}
+
+
+/* ==================================================
+   9. GRID DE QUARTOS
+================================================== */
+
+
+
+/* ==================================================
+   10. CARD DOS QUARTOS
+================================================== */
+
+
+
+/* ==================================================
+   11. FOOTER
+================================================== */
+footer {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  text-align: center;
+  padding: var(--spacing-md);
+}
