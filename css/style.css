@@ -135,6 +135,29 @@ section h2 {
    10. CARD DOS QUARTOS
 ================================================== */
 
+.card {
+  background-color: var(--color-white);
+
+  padding: var(--spacing-md);
+
+  border-radius: var(--radius);
+
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+}
+
+.card h3 {
+  margin-top: var(--spacing-sm);
+}
+
+.card p {
+  margin-top: var(--spacing-sm);
+}
 
 
 /* ==================================================
